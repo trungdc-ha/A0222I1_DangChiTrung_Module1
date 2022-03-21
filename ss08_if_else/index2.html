@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Nếu điểm số người dùng nhập vào >75
+    * thì thông báo pass khóa học.*/
+     /*Nếu điểm  > 75 & tỉ lệ vắng nghỉ >20 thì cũng ko pass,
+     * nhưng mà sẽ được xem xét.*/
+
+    /*
+    * Point > 75
+    *   absent > 20 ==> Xem xét
+    *   absent <= 20 ==> Pass
+    * Point <= 75
+    *   ==> fail
+    * */
+
+    let point = parseInt(prompt("Input point"));
+    let absent = parseInt(prompt("Input absent"));
+    if(point > 75){
+        if(absent > 20) {
+            alert("Xem xet ..noi chuyen..")
+        } else {
+            alert("Pass");
+        }
+    } else {
+        alert("Fail")
+    }
+
+
+</script>
+</body>
+</html>
