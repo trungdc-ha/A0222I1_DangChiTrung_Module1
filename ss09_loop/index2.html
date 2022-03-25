@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+/*
+* 1 1 1
+* 1 1 1
+* 1 1 1
+* ----
+* 1
+* 1
+* 1
+* ----
+* 1 1 1
+* ----
+*
+* */
+    loop1:for(let row = 1; row <=3 ; row++){
+        loop2: for(let col = 1; col <=3 ; col++){
+            document.write(col + "&nbsp;"); //in nội dung của cột
+            if(col >= 2){
+                break loop1;
+            }
+
+        }
+        document.write("<br>");
+        // if(row >= 2){
+        //     break;
+        // }
+    }
+
+    // for(let col = 1; col <=3 ; col++){
+    //     document.write(1 + "&nbsp;");
+    // }
+
+    /*
+    * 1 2
+    * 1 2
+    * */
+</script>
+</body>
+</html>

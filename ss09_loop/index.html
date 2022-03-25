@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Hien thi len mh
+    cac so nguyen tu 1 --> 10*/
+    // document.write(1);
+    // document.write(2);
+    // document.write(3);
+    // document.write(4);
+    // document.write(10);
+
+    // for(let i = 1; i <= 10; i++){
+    //     document.write(i);//1 2 3 .. 10
+    // }
+
+    // let i = 1;
+    // for (; i <= 10;) {
+    //     // if (i > 10) {
+    //     //     break;
+    //     // }
+    //     document.write(i);//1 2 3 .. 10
+    //     i++;
+    // }
+
+    // let i = 1;
+    // while (i < 10){
+    //     document.write(i);//1 2 3 .. 10
+    //     i++;
+    // }
+
+    // while (true) { /*vòng lặp vô hạn*/
+    //     document.write(i);//1 2 3 .. 10
+    //     i++; //2 3
+    //     if (i > 10) {
+    //         break; //thoát khỏi vòng lặp hiện tại
+    //     }
+    // }
+
+    /*Viết chương trình nhập kí tự từ bàn phím
+    * Sau đó hiển thị kí tự đó ra màn hình
+    * Nếu nhập "x" thì dừng.
+    * */
+    // while (true){
+    //     let input = prompt("input character: ")
+    //     document.write(input + "<br>");
+    //     if(input == "x"){
+    //         break;
+    //     }
+    // }
+
+    /*
+    * Mẹ cu Bôn cho 10 đồng
+    * Bảo Bôn đi siêu thị mua hàng hóa
+    * Mô phỏng lại quá trình mua hàng của Bôn
+    * Điều kiên: Bôn chỉ được phép mua hàng khi còn tiền
+    * */
+    //Xác định vấn đề cần lặp
+    //Lặp bao nhiều lần
+    //Xác định điều kiện lặp
+    // let money = 10;
+    // while (money>0){
+    //     let product = prompt("Bôn muốn mua gì ?");
+    //     let price = parseInt(prompt("Nhập giá sản phẩm ?"));
+    //     if(price <= money){
+    //         document.write("Bôn đã mua được "
+    //             + product + " với giá: "+price + "<br>");
+    //         money = money - price;
+    //     }
+    // }
+
+    let y = 1;
+    do {
+        document.write(y);
+        y++;
+    } while (y < -1);
+
+    while (y > 10){
+        document.write(y);//1 2 3 .. 10
+        y++;
+    }
+
+</script>
+</body>
+</html>
