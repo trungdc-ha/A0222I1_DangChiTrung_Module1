@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [10, "Ha Noi", true];
+    // document.write(arr[0]);
+    // document.write(arr[1]);
+    // document.write(arr[2]);
+
+    /*Dùng for thường : for-index*/
+    // for(let index = 0; index < arr.length; index++){
+    //     document.write(arr[index] + "<br>");
+    // }
+
+    /*Dung for in*/
+    // for(let index in arr){
+    //     // document.write(index); //in chỉ số index
+    //     document.write(arr[index]); //in gia tri
+    // }
+
+    /*Dung for of*/
+    for(let value of arr){
+        document.write(value); //in gia tri
+    }
+</script>
+</body>
+</html>
