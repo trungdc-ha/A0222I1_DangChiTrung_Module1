@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class DienThoai{
+            constructor(ten, hangSX) {
+                this.ten = ten;
+                this.hangSX = hangSX;
+            }
+
+            // constructor() {
+            // }
+
+            goiDien(){
+                document.write(this.ten + " dang goi dien cho ai do.");
+
+            }
+        }
+
+        /*B2 tạo đối tượng*/
+        // let iphone12 = new DienThoai();
+        // iphone12.goiDien();
+
+        let samsungs10 = new DienThoai("SamSung S10","SamSung");
+        samsungs10.ten = "Samsung s20";
+        samsungs10.goiDien(); //
+    </script>
+</body>
+</html>
