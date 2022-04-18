@@ -7,9 +7,10 @@
 <body>
     <script>
         class DienThoai{
-            constructor(ten, hangSX) {
+            constructor(ten, hangSX, matKhau) {
                 this.ten = ten;
                 this.hangSX = hangSX;
+                this.matKhau = matKhau; //gh46f54h65f789
             }
 
             // constructor() {
@@ -19,6 +20,24 @@
                 document.write(this.ten + " dang goi dien cho ai do.");
 
             }
+
+            //getter - trả về giá trị thuộc tính
+            getTen(){
+                return this.ten;
+            }
+
+            //setter - cập nhật giá trị thuộc tính
+            setTen(tenMoi){
+                this.ten = tenMoi;
+            }
+
+            getMatKhau(){
+                return this.matKhau*8; //giải mã
+            }
+
+            setMatKhau(mkMoi){
+                this.matKhau = mkMoi*8; //mã hóa
+            }
         }
 
         /*B2 tạo đối tượng*/
@@ -26,7 +45,8 @@
         // iphone12.goiDien();
 
         let samsungs10 = new DienThoai("SamSung S10","SamSung");
-        samsungs10.ten = "Samsung s20";
+        // samsungs10.ten = "Samsung s20";
+        samsungs10.setTen("Samsung s20");
         samsungs10.goiDien(); //
     </script>
 </body>
