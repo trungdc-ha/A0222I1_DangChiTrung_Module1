@@ -5,13 +5,16 @@
     <title>Title</title>
 </head>
 <body>
+<p id="abc"></p>
 <script>
     for (let i = 1; i <= 10; i++) {
         if (i == 3) {
             continue;
         }
-        document.write(i);
+        // document.write(i);
     }
+
+    document.getElementById("abc").innerHTML = "<button>btn</button>";
 </script>
 </body>
 </html>
